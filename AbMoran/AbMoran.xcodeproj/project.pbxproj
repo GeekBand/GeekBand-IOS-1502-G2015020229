@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D53F85941BFF1F7900B84AB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D53F85931BFF1F7900B84AB8 /* main.m */; };
-		D53F85971BFF1F7900B84AB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D53F85961BFF1F7900B84AB8 /* AppDelegate.m */; };
-		D53F859A1BFF1F7900B84AB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53F85991BFF1F7900B84AB8 /* ViewController.m */; };
-		D53F859D1BFF1F7900B84AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53F859B1BFF1F7900B84AB8 /* Main.storyboard */; };
-		D53F859F1BFF1F7900B84AB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53F859E1BFF1F7900B84AB8 /* Assets.xcassets */; };
-		D53F85A21BFF1F7900B84AB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53F85A01BFF1F7900B84AB8 /* LaunchScreen.storyboard */; };
 		D53F85AD1BFF1F7900B84AB8 /* AbMoranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D53F85AC1BFF1F7900B84AB8 /* AbMoranTests.m */; };
 		D53F85B81BFF1F7900B84AB8 /* AbMoranUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D53F85B71BFF1F7900B84AB8 /* AbMoranUITests.m */; };
+		D552FC521C02AB470071D4A8 /* App in Resources */ = {isa = PBXBuildFile; fileRef = D552FC4C1C02AB470071D4A8 /* App */; };
+		D552FC531C02AB470071D4A8 /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = D552FC4D1C02AB470071D4A8 /* Controllers */; };
+		D552FC541C02AB470071D4A8 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = D552FC4E1C02AB470071D4A8 /* Models */; };
+		D552FC551C02AB470071D4A8 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = D552FC4F1C02AB470071D4A8 /* Resources */; };
+		D552FC561C02AB470071D4A8 /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = D552FC501C02AB470071D4A8 /* Supporting Files */; };
+		D552FC571C02AB470071D4A8 /* Views in Resources */ = {isa = PBXBuildFile; fileRef = D552FC511C02AB470071D4A8 /* Views */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +36,18 @@
 
 /* Begin PBXFileReference section */
 		D53F858F1BFF1F7900B84AB8 /* AbMoran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbMoran.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D53F85931BFF1F7900B84AB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D53F85951BFF1F7900B84AB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D53F85961BFF1F7900B84AB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D53F85981BFF1F7900B84AB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D53F85991BFF1F7900B84AB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D53F859C1BFF1F7900B84AB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D53F859E1BFF1F7900B84AB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D53F85A11BFF1F7900B84AB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D53F85A31BFF1F7900B84AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D53F85A81BFF1F7900B84AB8 /* AbMoranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbMoranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53F85AC1BFF1F7900B84AB8 /* AbMoranTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbMoranTests.m; sourceTree = "<group>"; };
 		D53F85AE1BFF1F7900B84AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D53F85B31BFF1F7900B84AB8 /* AbMoranUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbMoranUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53F85B71BFF1F7900B84AB8 /* AbMoranUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbMoranUITests.m; sourceTree = "<group>"; };
 		D53F85B91BFF1F7900B84AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D552FC4C1C02AB470071D4A8 /* App */ = {isa = PBXFileReference; lastKnownFileType = folder; path = App; sourceTree = "<group>"; };
+		D552FC4D1C02AB470071D4A8 /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
+		D552FC4E1C02AB470071D4A8 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		D552FC4F1C02AB470071D4A8 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		D552FC501C02AB470071D4A8 /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
+		D552FC511C02AB470071D4A8 /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,25 +98,14 @@
 		D53F85911BFF1F7900B84AB8 /* AbMoran */ = {
 			isa = PBXGroup;
 			children = (
-				D53F85951BFF1F7900B84AB8 /* AppDelegate.h */,
-				D53F85961BFF1F7900B84AB8 /* AppDelegate.m */,
-				D53F85981BFF1F7900B84AB8 /* ViewController.h */,
-				D53F85991BFF1F7900B84AB8 /* ViewController.m */,
-				D53F859B1BFF1F7900B84AB8 /* Main.storyboard */,
-				D53F859E1BFF1F7900B84AB8 /* Assets.xcassets */,
-				D53F85A01BFF1F7900B84AB8 /* LaunchScreen.storyboard */,
-				D53F85A31BFF1F7900B84AB8 /* Info.plist */,
-				D53F85921BFF1F7900B84AB8 /* Supporting Files */,
+				D552FC4C1C02AB470071D4A8 /* App */,
+				D552FC4D1C02AB470071D4A8 /* Controllers */,
+				D552FC4E1C02AB470071D4A8 /* Models */,
+				D552FC4F1C02AB470071D4A8 /* Resources */,
+				D552FC501C02AB470071D4A8 /* Supporting Files */,
+				D552FC511C02AB470071D4A8 /* Views */,
 			);
 			path = AbMoran;
-			sourceTree = "<group>";
-		};
-		D53F85921BFF1F7900B84AB8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D53F85931BFF1F7900B84AB8 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D53F85AB1BFF1F7900B84AB8 /* AbMoranTests */ = {
@@ -246,9 +232,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53F85A21BFF1F7900B84AB8 /* LaunchScreen.storyboard in Resources */,
-				D53F859F1BFF1F7900B84AB8 /* Assets.xcassets in Resources */,
-				D53F859D1BFF1F7900B84AB8 /* Main.storyboard in Resources */,
+				D552FC561C02AB470071D4A8 /* Supporting Files in Resources */,
+				D552FC541C02AB470071D4A8 /* Models in Resources */,
+				D552FC521C02AB470071D4A8 /* App in Resources */,
+				D552FC571C02AB470071D4A8 /* Views in Resources */,
+				D552FC551C02AB470071D4A8 /* Resources in Resources */,
+				D552FC531C02AB470071D4A8 /* Controllers in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53F859A1BFF1F7900B84AB8 /* ViewController.m in Sources */,
-				D53F85971BFF1F7900B84AB8 /* AppDelegate.m in Sources */,
-				D53F85941BFF1F7900B84AB8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,25 +295,6 @@
 			targetProxy = D53F85B41BFF1F7900B84AB8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D53F859B1BFF1F7900B84AB8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D53F859C1BFF1F7900B84AB8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D53F85A01BFF1F7900B84AB8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D53F85A11BFF1F7900B84AB8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D53F85BA1BFF1F7900B84AB8 /* Debug */ = {
@@ -414,7 +381,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AbMoran/Info.plist;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "$(SRCROOT)/AbMoran/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GeekBand.AbMoran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,7 +393,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AbMoran/Info.plist;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "$(SRCROOT)/AbMoran/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GeekBand.AbMoran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,6 +468,7 @@
 				D53F85BE1BFF1F7900B84AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D53F85BF1BFF1F7900B84AB8 /* Build configuration list for PBXNativeTarget "AbMoranTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +477,7 @@
 				D53F85C11BFF1F7900B84AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D53F85C21BFF1F7900B84AB8 /* Build configuration list for PBXNativeTarget "AbMoranUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +486,7 @@
 				D53F85C41BFF1F7900B84AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
