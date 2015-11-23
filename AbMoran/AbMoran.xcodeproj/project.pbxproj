@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		D54666F21C02DBE8007CFFF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D54666F11C02DBE8007CFFF0 /* main.m */; };
 		D54666F51C02DBE8007CFFF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D54666F41C02DBE8007CFFF0 /* AppDelegate.m */; };
-		D54666F81C02DBE8007CFFF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D54666F71C02DBE8007CFFF0 /* ViewController.m */; };
-		D54666FB1C02DBE8007CFFF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54666F91C02DBE8007CFFF0 /* Main.storyboard */; };
-		D54666FD1C02DBE8007CFFF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D54666FC1C02DBE8007CFFF0 /* Assets.xcassets */; };
-		D54667001C02DBE8007CFFF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D54666FE1C02DBE8007CFFF0 /* LaunchScreen.storyboard */; };
 		D546670B1C02DBE8007CFFF0 /* ABMoranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D546670A1C02DBE8007CFFF0 /* ABMoranTests.m */; };
 		D54667161C02DBE8007CFFF0 /* ABMoranUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54667151C02DBE8007CFFF0 /* ABMoranUITests.m */; };
 /* End PBXBuildFile section */
@@ -39,11 +35,6 @@
 		D54666F11C02DBE8007CFFF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D54666F31C02DBE8007CFFF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D54666F41C02DBE8007CFFF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D54666F61C02DBE8007CFFF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D54666F71C02DBE8007CFFF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D54666FA1C02DBE8007CFFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D54666FC1C02DBE8007CFFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D54666FF1C02DBE8007CFFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D54667011C02DBE8007CFFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D54667061C02DBE8007CFFF0 /* ABMoranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABMoranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D546670A1C02DBE8007CFFF0 /* ABMoranTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMoranTests.m; sourceTree = "<group>"; };
@@ -103,11 +94,6 @@
 			children = (
 				D54666F31C02DBE8007CFFF0 /* AppDelegate.h */,
 				D54666F41C02DBE8007CFFF0 /* AppDelegate.m */,
-				D54666F61C02DBE8007CFFF0 /* ViewController.h */,
-				D54666F71C02DBE8007CFFF0 /* ViewController.m */,
-				D54666F91C02DBE8007CFFF0 /* Main.storyboard */,
-				D54666FC1C02DBE8007CFFF0 /* Assets.xcassets */,
-				D54666FE1C02DBE8007CFFF0 /* LaunchScreen.storyboard */,
 				D54667011C02DBE8007CFFF0 /* Info.plist */,
 				D54666F01C02DBE8007CFFF0 /* Supporting Files */,
 			);
@@ -221,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D54666E81C02DBE8007CFFF0 /* Build configuration list for PBXProject "ABMoran" */;
+			buildConfigurationList = D54666E81C02DBE8007CFFF0 /* Build configuration list for PBXProject "AbMoran" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -246,9 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D54667001C02DBE8007CFFF0 /* LaunchScreen.storyboard in Resources */,
-				D54666FD1C02DBE8007CFFF0 /* Assets.xcassets in Resources */,
-				D54666FB1C02DBE8007CFFF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D54666F81C02DBE8007CFFF0 /* ViewController.m in Sources */,
 				D54666F51C02DBE8007CFFF0 /* AppDelegate.m in Sources */,
 				D54666F21C02DBE8007CFFF0 /* main.m in Sources */,
 			);
@@ -309,25 +291,6 @@
 			targetProxy = D54667121C02DBE8007CFFF0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D54666F91C02DBE8007CFFF0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D54666FA1C02DBE8007CFFF0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D54666FE1C02DBE8007CFFF0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D54666FF1C02DBE8007CFFF0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D54667181C02DBE8007CFFF0 /* Debug */ = {
@@ -483,7 +446,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D54666E81C02DBE8007CFFF0 /* Build configuration list for PBXProject "ABMoran" */ = {
+		D54666E81C02DBE8007CFFF0 /* Build configuration list for PBXProject "AbMoran" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D54667181C02DBE8007CFFF0 /* Debug */,
@@ -499,6 +462,7 @@
 				D546671C1C02DBE8007CFFF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D546671D1C02DBE8007CFFF0 /* Build configuration list for PBXNativeTarget "ABMoranTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +471,7 @@
 				D546671F1C02DBE8007CFFF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D54667201C02DBE8007CFFF0 /* Build configuration list for PBXNativeTarget "ABMoranUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +480,7 @@
 				D54667221C02DBE8007CFFF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
