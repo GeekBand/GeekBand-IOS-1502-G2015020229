@@ -1,18 +1,18 @@
 //
-//  AbMoranUITests.m
-//  AbMoranUITests
+//  ABMoranUITests.m
+//  ABMoranUITests
 //
-//  Created by Arbin on 11/20/15.
-//  Copyright © 2015 com.GeekBand. All rights reserved.
+//  Created by Arbin on 11/23/15.
+//  Copyright © 2015 com.Geekband. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface AbMoranUITests : XCTestCase
+@interface ABMoranUITests : XCTestCase
 
 @end
 
-@implementation AbMoranUITests
+@implementation ABMoranUITests
 
 - (void)setUp {
     [super setUp];

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D53F858E1BFF1F7900B84AB8"
-               BuildableName = "AbMoran.app"
-               BlueprintName = "AbMoran"
-               ReferencedContainer = "container:AbMoran.xcodeproj">
+               BlueprintIdentifier = "D54666EC1C02DBE8007CFFF0"
+               BuildableName = "ABMoran.app"
+               BlueprintName = "ABMoran"
+               ReferencedContainer = "container:ABMoran.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D53F85A71BFF1F7900B84AB8"
-               BuildableName = "AbMoranTests.xctest"
-               BlueprintName = "AbMoranTests"
-               ReferencedContainer = "container:AbMoran.xcodeproj">
+               BlueprintIdentifier = "D54667051C02DBE8007CFFF0"
+               BuildableName = "ABMoranTests.xctest"
+               BlueprintName = "ABMoranTests"
+               ReferencedContainer = "container:ABMoran.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D53F85B21BFF1F7900B84AB8"
-               BuildableName = "AbMoranUITests.xctest"
-               BlueprintName = "AbMoranUITests"
-               ReferencedContainer = "container:AbMoran.xcodeproj">
+               BlueprintIdentifier = "D54667101C02DBE8007CFFF0"
+               BuildableName = "ABMoranUITests.xctest"
+               BlueprintName = "ABMoranUITests"
+               ReferencedContainer = "container:ABMoran.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D53F858E1BFF1F7900B84AB8"
-            BuildableName = "AbMoran.app"
-            BlueprintName = "AbMoran"
-            ReferencedContainer = "container:AbMoran.xcodeproj">
+            BlueprintIdentifier = "D54666EC1C02DBE8007CFFF0"
+            BuildableName = "ABMoran.app"
+            BlueprintName = "ABMoran"
+            ReferencedContainer = "container:ABMoran.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D53F858E1BFF1F7900B84AB8"
-            BuildableName = "AbMoran.app"
-            BlueprintName = "AbMoran"
-            ReferencedContainer = "container:AbMoran.xcodeproj">
+            BlueprintIdentifier = "D54666EC1C02DBE8007CFFF0"
+            BuildableName = "ABMoran.app"
+            BlueprintName = "ABMoran"
+            ReferencedContainer = "container:ABMoran.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D53F858E1BFF1F7900B84AB8"
-            BuildableName = "AbMoran.app"
-            BlueprintName = "AbMoran"
-            ReferencedContainer = "container:AbMoran.xcodeproj">
+            BlueprintIdentifier = "D54666EC1C02DBE8007CFFF0"
+            BuildableName = "ABMoran.app"
+            BlueprintName = "ABMoran"
+            ReferencedContainer = "container:ABMoran.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

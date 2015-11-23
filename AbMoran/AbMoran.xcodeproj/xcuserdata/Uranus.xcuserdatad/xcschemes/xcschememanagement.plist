@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AbMoran.xcscheme</key>
+		<key>ABMoran.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D53F858E1BFF1F7900B84AB8</key>
+		<key>D54666EC1C02DBE8007CFFF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D53F85A71BFF1F7900B84AB8</key>
+		<key>D54667051C02DBE8007CFFF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D53F85B21BFF1F7900B84AB8</key>
+		<key>D54667101C02DBE8007CFFF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
