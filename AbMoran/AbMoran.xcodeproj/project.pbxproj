@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		D546670B1C02DBE8007CFFF0 /* ABMoranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D546670A1C02DBE8007CFFF0 /* ABMoranTests.m */; };
 		D54667161C02DBE8007CFFF0 /* ABMoranUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54667151C02DBE8007CFFF0 /* ABMoranUITests.m */; };
-		D5C5473E1C02E79B00551E0B /* App in Resources */ = {isa = PBXBuildFile; fileRef = D5C5473C1C02E79B00551E0B /* App */; };
-		D5C5473F1C02E79B00551E0B /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = D5C5473D1C02E79B00551E0B /* Supporting Files */; };
+		D5C547461C02E8AC00551E0B /* App in Resources */ = {isa = PBXBuildFile; fileRef = D5C547401C02E8AC00551E0B /* App */; };
+		D5C5474A1C02E8AC00551E0B /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = D5C547441C02E8AC00551E0B /* Supporting Files */; };
+		D5C5474D1C02E8DD00551E0B /* Views in Resources */ = {isa = PBXBuildFile; fileRef = D5C5474C1C02E8DD00551E0B /* Views */; };
+		D5C547501C02E91300551E0B /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = D5C5474F1C02E91300551E0B /* Controllers */; };
+		D5C547571C02E9DA00551E0B /* Models in Resources */ = {isa = PBXBuildFile; fileRef = D5C547561C02E9DA00551E0B /* Models */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,11 @@
 		D54667111C02DBE8007CFFF0 /* ABMoranUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABMoranUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54667151C02DBE8007CFFF0 /* ABMoranUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMoranUITests.m; sourceTree = "<group>"; };
 		D54667171C02DBE8007CFFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5C5473C1C02E79B00551E0B /* App */ = {isa = PBXFileReference; lastKnownFileType = folder; name = App; path = AbMoran/App; sourceTree = SOURCE_ROOT; };
-		D5C5473D1C02E79B00551E0B /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Supporting Files"; path = "AbMoran/Supporting Files"; sourceTree = SOURCE_ROOT; };
+		D5C547401C02E8AC00551E0B /* App */ = {isa = PBXFileReference; lastKnownFileType = folder; name = App; path = AbMoran/App; sourceTree = SOURCE_ROOT; };
+		D5C547441C02E8AC00551E0B /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Supporting Files"; path = "AbMoran/Supporting Files"; sourceTree = SOURCE_ROOT; };
+		D5C5474C1C02E8DD00551E0B /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Views; path = AbMoran/Views; sourceTree = SOURCE_ROOT; };
+		D5C5474F1C02E91300551E0B /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Controllers; path = AbMoran/Controllers; sourceTree = SOURCE_ROOT; };
+		D5C547561C02E9DA00551E0B /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = AbMoran/Models; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +96,11 @@
 		D54666EF1C02DBE8007CFFF0 /* ABMoran */ = {
 			isa = PBXGroup;
 			children = (
-				D5C5473C1C02E79B00551E0B /* App */,
-				D5C5473D1C02E79B00551E0B /* Supporting Files */,
+				D5C547561C02E9DA00551E0B /* Models */,
+				D5C5474F1C02E91300551E0B /* Controllers */,
+				D5C5474C1C02E8DD00551E0B /* Views */,
+				D5C547401C02E8AC00551E0B /* App */,
+				D5C547441C02E8AC00551E0B /* Supporting Files */,
 			);
 			path = ABMoran;
 			sourceTree = "<group>";
@@ -220,8 +229,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C5473F1C02E79B00551E0B /* Supporting Files in Resources */,
-				D5C5473E1C02E79B00551E0B /* App in Resources */,
+				D5C547571C02E9DA00551E0B /* Models in Resources */,
+				D5C5474D1C02E8DD00551E0B /* Views in Resources */,
+				D5C5474A1C02E8AC00551E0B /* Supporting Files in Resources */,
+				D5C547501C02E91300551E0B /* Controllers in Resources */,
+				D5C547461C02E8AC00551E0B /* App in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
