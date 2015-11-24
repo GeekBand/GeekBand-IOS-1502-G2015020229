@@ -21,6 +21,8 @@
 		D51578B41C040CD600795C48 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578AD1C040CD600795C48 /* LoginRequest.m */; };
 		D51578B51C040CD600795C48 /* BLMultipartForm.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578B01C040CD600795C48 /* BLMultipartForm.m */; };
 		D51578B91C040D3200795C48 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578B81C040D3200795C48 /* Global.m */; };
+		D51578BC1C0449C000795C48 /* RegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578BB1C0449C000795C48 /* RegisterRequest.m */; };
+		D51578BF1C044A7900795C48 /* RegisterRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578BE1C044A7900795C48 /* RegisterRequestParser.m */; };
 		D546670B1C02DBE8007CFFF0 /* ABMoranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D546670A1C02DBE8007CFFF0 /* ABMoranTests.m */; };
 		D54667161C02DBE8007CFFF0 /* ABMoranUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54667151C02DBE8007CFFF0 /* ABMoranUITests.m */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,10 @@
 		D51578B01C040CD600795C48 /* BLMultipartForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMultipartForm.m; sourceTree = "<group>"; };
 		D51578B71C040D3200795C48 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		D51578B81C040D3200795C48 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
+		D51578BA1C0449C000795C48 /* RegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterRequest.h; sourceTree = "<group>"; };
+		D51578BB1C0449C000795C48 /* RegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterRequest.m; sourceTree = "<group>"; };
+		D51578BD1C044A7900795C48 /* RegisterRequestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterRequestParser.h; path = AbMoran/Network/Parsers/RegisterRequestParser.h; sourceTree = SOURCE_ROOT; };
+		D51578BE1C044A7900795C48 /* RegisterRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterRequestParser.m; path = AbMoran/Network/Parsers/RegisterRequestParser.m; sourceTree = SOURCE_ROOT; };
 		D54666ED1C02DBE8007CFFF0 /* ABMoran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABMoran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54667061C02DBE8007CFFF0 /* ABMoranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABMoranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D546670A1C02DBE8007CFFF0 /* ABMoranTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMoranTests.m; sourceTree = "<group>"; };
@@ -192,6 +198,8 @@
 			children = (
 				D51578801C0408D500795C48 /* LoginRequestParser.h */,
 				D51578811C0408D500795C48 /* LoginRequestParser.m */,
+				D51578BD1C044A7900795C48 /* RegisterRequestParser.h */,
+				D51578BE1C044A7900795C48 /* RegisterRequestParser.m */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -203,6 +211,8 @@
 				D51578AB1C040CD600795C48 /* GetImage.m */,
 				D51578AC1C040CD600795C48 /* LoginRequest.h */,
 				D51578AD1C040CD600795C48 /* LoginRequest.m */,
+				D51578BA1C0449C000795C48 /* RegisterRequest.h */,
+				D51578BB1C0449C000795C48 /* RegisterRequest.m */,
 			);
 			name = Requests;
 			path = AbMoran/Network/Requests;
@@ -411,6 +421,8 @@
 				D51578B91C040D3200795C48 /* Global.m in Sources */,
 				D51578611C04032300795C48 /* LoginViewController.m in Sources */,
 				D51578B41C040CD600795C48 /* LoginRequest.m in Sources */,
+				D51578BF1C044A7900795C48 /* RegisterRequestParser.m in Sources */,
+				D51578BC1C0449C000795C48 /* RegisterRequest.m in Sources */,
 				D51578631C04032300795C48 /* main.m in Sources */,
 				D51578601C04032300795C48 /* AppDelegate.m in Sources */,
 				D51578B51C040CD600795C48 /* BLMultipartForm.m in Sources */,

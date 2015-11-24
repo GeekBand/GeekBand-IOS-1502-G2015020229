@@ -62,7 +62,7 @@
 - (void)loginHandle {
     NSString *email = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
-    NSString *gbid = @"G2015020227";
+    NSString *gbid = @"G2015020229";
     
     self.loginRequest = [[LoginRequest alloc]init];
     [self.loginRequest sendLoginRequestWithEmail:email password:password gbid:gbid delegate:self];
