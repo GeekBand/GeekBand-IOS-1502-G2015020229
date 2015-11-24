@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D51578601C04032300795C48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578541C04032300795C48 /* AppDelegate.m */; };
+		D51578611C04032300795C48 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578581C04032300795C48 /* LoginViewController.m */; };
+		D51578621C04032300795C48 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D515785B1C04032300795C48 /* Info.plist */; };
+		D51578631C04032300795C48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D515785C1C04032300795C48 /* main.m */; };
+		D51578681C04035100795C48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51578661C04035100795C48 /* Images.xcassets */; };
+		D51578691C04035100795C48 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51578671C04035100795C48 /* Main.xcassets */; };
+		D515786B1C0403A900795C48 /* LoginAndRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515786A1C0403A900795C48 /* LoginAndRegister.storyboard */; };
+		D515786E1C04049800795C48 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D515786D1C04049800795C48 /* RegisterViewController.m */; };
+		D51578711C0405A200795C48 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578701C0405A200795C48 /* User.m */; };
+		D51578821C0408D500795C48 /* LoginRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578811C0408D500795C48 /* LoginRequestParser.m */; };
+		D51578B31C040CD600795C48 /* GetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578AB1C040CD600795C48 /* GetImage.m */; };
+		D51578B41C040CD600795C48 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578AD1C040CD600795C48 /* LoginRequest.m */; };
+		D51578B51C040CD600795C48 /* BLMultipartForm.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578B01C040CD600795C48 /* BLMultipartForm.m */; };
+		D51578B91C040D3200795C48 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = D51578B81C040D3200795C48 /* Global.m */; };
 		D546670B1C02DBE8007CFFF0 /* ABMoranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D546670A1C02DBE8007CFFF0 /* ABMoranTests.m */; };
 		D54667161C02DBE8007CFFF0 /* ABMoranUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54667151C02DBE8007CFFF0 /* ABMoranUITests.m */; };
-		D5C547461C02E8AC00551E0B /* App in Resources */ = {isa = PBXBuildFile; fileRef = D5C547401C02E8AC00551E0B /* App */; };
-		D5C5474A1C02E8AC00551E0B /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = D5C547441C02E8AC00551E0B /* Supporting Files */; };
-		D5C5474D1C02E8DD00551E0B /* Views in Resources */ = {isa = PBXBuildFile; fileRef = D5C5474C1C02E8DD00551E0B /* Views */; };
-		D5C547501C02E91300551E0B /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = D5C5474F1C02E91300551E0B /* Controllers */; };
-		D5C547571C02E9DA00551E0B /* Models in Resources */ = {isa = PBXBuildFile; fileRef = D5C547561C02E9DA00551E0B /* Models */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D51578531C04032300795C48 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D51578541C04032300795C48 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D51578571C04032300795C48 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D51578581C04032300795C48 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D515785B1C04032300795C48 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D515785C1C04032300795C48 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D51578661C04035100795C48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D51578671C04035100795C48 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
+		D515786A1C0403A900795C48 /* LoginAndRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginAndRegister.storyboard; sourceTree = "<group>"; };
+		D515786C1C04049800795C48 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		D515786D1C04049800795C48 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		D515786F1C0405A200795C48 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		D51578701C0405A200795C48 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D51578801C0408D500795C48 /* LoginRequestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginRequestParser.h; path = AbMoran/Network/Parsers/LoginRequestParser.h; sourceTree = SOURCE_ROOT; };
+		D51578811C0408D500795C48 /* LoginRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginRequestParser.m; path = AbMoran/Network/Parsers/LoginRequestParser.m; sourceTree = SOURCE_ROOT; };
+		D51578AA1C040CD600795C48 /* GetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetImage.h; sourceTree = "<group>"; };
+		D51578AB1C040CD600795C48 /* GetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetImage.m; sourceTree = "<group>"; };
+		D51578AC1C040CD600795C48 /* LoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		D51578AD1C040CD600795C48 /* LoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
+		D51578AF1C040CD600795C48 /* BLMultipartForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMultipartForm.h; sourceTree = "<group>"; };
+		D51578B01C040CD600795C48 /* BLMultipartForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMultipartForm.m; sourceTree = "<group>"; };
+		D51578B71C040D3200795C48 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		D51578B81C040D3200795C48 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
 		D54666ED1C02DBE8007CFFF0 /* ABMoran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABMoran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54667061C02DBE8007CFFF0 /* ABMoranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABMoranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D546670A1C02DBE8007CFFF0 /* ABMoranTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMoranTests.m; sourceTree = "<group>"; };
@@ -41,11 +73,6 @@
 		D54667111C02DBE8007CFFF0 /* ABMoranUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABMoranUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54667151C02DBE8007CFFF0 /* ABMoranUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMoranUITests.m; sourceTree = "<group>"; };
 		D54667171C02DBE8007CFFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5C547401C02E8AC00551E0B /* App */ = {isa = PBXFileReference; lastKnownFileType = folder; name = App; path = AbMoran/App; sourceTree = SOURCE_ROOT; };
-		D5C547441C02E8AC00551E0B /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Supporting Files"; path = "AbMoran/Supporting Files"; sourceTree = SOURCE_ROOT; };
-		D5C5474C1C02E8DD00551E0B /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Views; path = AbMoran/Views; sourceTree = SOURCE_ROOT; };
-		D5C5474F1C02E91300551E0B /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Controllers; path = AbMoran/Controllers; sourceTree = SOURCE_ROOT; };
-		D5C547561C02E9DA00551E0B /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = AbMoran/Models; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +100,126 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D51578521C04032300795C48 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D51578531C04032300795C48 /* AppDelegate.h */,
+				D51578541C04032300795C48 /* AppDelegate.m */,
+			);
+			name = App;
+			path = AbMoran/App;
+			sourceTree = SOURCE_ROOT;
+		};
+		D51578551C04032300795C48 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D51578561C04032300795C48 /* LoginAndRegister */,
+			);
+			name = Controllers;
+			path = AbMoran/Controllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		D51578561C04032300795C48 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				D51578571C04032300795C48 /* LoginViewController.h */,
+				D51578581C04032300795C48 /* LoginViewController.m */,
+				D515786C1C04049800795C48 /* RegisterViewController.h */,
+				D515786D1C04049800795C48 /* RegisterViewController.m */,
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		D51578591C04032300795C48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D515786F1C0405A200795C48 /* User.h */,
+				D51578701C0405A200795C48 /* User.m */,
+			);
+			name = Models;
+			path = AbMoran/Models;
+			sourceTree = SOURCE_ROOT;
+		};
+		D515785A1C04032300795C48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D515785B1C04032300795C48 /* Info.plist */,
+				D515785C1C04032300795C48 /* main.m */,
+			);
+			name = "Supporting Files";
+			path = "AbMoran/Supporting Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		D515785D1C04032300795C48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D515785E1C04032300795C48 /* LoginAndRegister */,
+			);
+			name = Views;
+			path = AbMoran/Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		D515785E1C04032300795C48 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				D515786A1C0403A900795C48 /* LoginAndRegister.storyboard */,
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		D51578651C04035100795C48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D51578661C04035100795C48 /* Images.xcassets */,
+				D51578671C04035100795C48 /* Main.xcassets */,
+			);
+			name = Resources;
+			path = AbMoran/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		D51578721C04065400795C48 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D51578A91C040CD600795C48 /* Requests */,
+				D51578AE1C040CD600795C48 /* Utilities */,
+				D51578771C04089500795C48 /* Parsers */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		D51578771C04089500795C48 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				D51578801C0408D500795C48 /* LoginRequestParser.h */,
+				D51578811C0408D500795C48 /* LoginRequestParser.m */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		D51578A91C040CD600795C48 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D51578AA1C040CD600795C48 /* GetImage.h */,
+				D51578AB1C040CD600795C48 /* GetImage.m */,
+				D51578AC1C040CD600795C48 /* LoginRequest.h */,
+				D51578AD1C040CD600795C48 /* LoginRequest.m */,
+			);
+			name = Requests;
+			path = AbMoran/Network/Requests;
+			sourceTree = SOURCE_ROOT;
+		};
+		D51578AE1C040CD600795C48 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D51578AF1C040CD600795C48 /* BLMultipartForm.h */,
+				D51578B01C040CD600795C48 /* BLMultipartForm.m */,
+				D51578B71C040D3200795C48 /* Global.h */,
+				D51578B81C040D3200795C48 /* Global.m */,
+			);
+			name = Utilities;
+			path = AbMoran/Network/Utilities;
+			sourceTree = SOURCE_ROOT;
+		};
 		D54666E41C02DBE8007CFFF0 = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +243,13 @@
 		D54666EF1C02DBE8007CFFF0 /* ABMoran */ = {
 			isa = PBXGroup;
 			children = (
-				D5C547561C02E9DA00551E0B /* Models */,
-				D5C5474F1C02E91300551E0B /* Controllers */,
-				D5C5474C1C02E8DD00551E0B /* Views */,
-				D5C547401C02E8AC00551E0B /* App */,
-				D5C547441C02E8AC00551E0B /* Supporting Files */,
+				D51578721C04065400795C48 /* Network */,
+				D51578651C04035100795C48 /* Resources */,
+				D51578521C04032300795C48 /* App */,
+				D51578551C04032300795C48 /* Controllers */,
+				D51578591C04032300795C48 /* Models */,
+				D515785A1C04032300795C48 /* Supporting Files */,
+				D515785D1C04032300795C48 /* Views */,
 			);
 			path = ABMoran;
 			sourceTree = "<group>";
@@ -229,11 +378,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C547571C02E9DA00551E0B /* Models in Resources */,
-				D5C5474D1C02E8DD00551E0B /* Views in Resources */,
-				D5C5474A1C02E8AC00551E0B /* Supporting Files in Resources */,
-				D5C547501C02E91300551E0B /* Controllers in Resources */,
-				D5C547461C02E8AC00551E0B /* App in Resources */,
+				D515786B1C0403A900795C48 /* LoginAndRegister.storyboard in Resources */,
+				D51578681C04035100795C48 /* Images.xcassets in Resources */,
+				D51578621C04032300795C48 /* Info.plist in Resources */,
+				D51578691C04035100795C48 /* Main.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +406,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51578711C0405A200795C48 /* User.m in Sources */,
+				D51578B31C040CD600795C48 /* GetImage.m in Sources */,
+				D51578B91C040D3200795C48 /* Global.m in Sources */,
+				D51578611C04032300795C48 /* LoginViewController.m in Sources */,
+				D51578B41C040CD600795C48 /* LoginRequest.m in Sources */,
+				D51578631C04032300795C48 /* main.m in Sources */,
+				D51578601C04032300795C48 /* AppDelegate.m in Sources */,
+				D51578B51C040CD600795C48 /* BLMultipartForm.m in Sources */,
+				D51578821C0408D500795C48 /* LoginRequestParser.m in Sources */,
+				D515786E1C04049800795C48 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +534,9 @@
 		D546671B1C02DBE8007CFFF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/AbMoran/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Geekband.ABMoran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,7 +546,9 @@
 		D546671C1C02DBE8007CFFF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/AbMoran/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Geekband.ABMoran;
 				PRODUCT_NAME = "$(TARGET_NAME)";

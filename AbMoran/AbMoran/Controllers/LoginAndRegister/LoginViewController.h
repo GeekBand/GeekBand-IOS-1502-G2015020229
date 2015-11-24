@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoginRequest.h"
+#import "User.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController<UITextFieldDelegate, LoginRequestDelegate>
+
+@property (nonatomic, strong) LoginRequest *loginRequest;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+- (IBAction)loginButtonClicked:(id)sender;
+- (IBAction)touchDownAction:(id)sender;
 
 @end
