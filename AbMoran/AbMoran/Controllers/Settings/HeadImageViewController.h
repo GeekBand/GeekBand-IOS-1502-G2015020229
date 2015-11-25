@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChangeAvatarRequest.h"
 
-@interface HeadImageViewController : UIViewController
+@interface HeadImageViewController : UIViewController<ChangeAvatarRequestDelegate, UIImagePickerControllerDelegate>
+- (IBAction)doneButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
+@property (strong, nonatomic) UIImagePickerController *pickerController;
+- (IBAction)editHeadImageClicked:(id)sender;
 
 @end

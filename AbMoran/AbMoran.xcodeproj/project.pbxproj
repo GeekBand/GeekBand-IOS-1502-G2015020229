@@ -79,6 +79,8 @@
 		D5157A4C1C0553E700795C48 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5157A481C0553E700795C48 /* My.storyboard */; };
 		D5157A4D1C0553E700795C48 /* Square.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5157A4A1C0553E700795C48 /* Square.storyboard */; };
 		D5157A4E1C0553E700795C48 /* ViewDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5157A4B1C0553E700795C48 /* ViewDetail.storyboard */; };
+		D5157A511C05792700795C48 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5157A501C05792700795C48 /* HomePageViewController.m */; };
+		D5157A571C057C6B00795C48 /* ChangeAvatarRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5157A561C057C6B00795C48 /* ChangeAvatarRequest.m */; };
 		D546670B1C02DBE8007CFFF0 /* ABMoranTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D546670A1C02DBE8007CFFF0 /* ABMoranTests.m */; };
 		D54667161C02DBE8007CFFF0 /* ABMoranUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D54667151C02DBE8007CFFF0 /* ABMoranUITests.m */; };
 /* End PBXBuildFile section */
@@ -236,6 +238,10 @@
 		D5157A481C0553E700795C48 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
 		D5157A4A1C0553E700795C48 /* Square.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Square.storyboard; sourceTree = "<group>"; };
 		D5157A4B1C0553E700795C48 /* ViewDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewDetail.storyboard; sourceTree = "<group>"; };
+		D5157A4F1C05792700795C48 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		D5157A501C05792700795C48 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		D5157A551C057C6B00795C48 /* ChangeAvatarRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeAvatarRequest.h; sourceTree = "<group>"; };
+		D5157A561C057C6B00795C48 /* ChangeAvatarRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeAvatarRequest.m; sourceTree = "<group>"; };
 		D54666ED1C02DBE8007CFFF0 /* ABMoran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABMoran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54667061C02DBE8007CFFF0 /* ABMoranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABMoranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D546670A1C02DBE8007CFFF0 /* ABMoranTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABMoranTests.m; sourceTree = "<group>"; };
@@ -395,6 +401,8 @@
 				D51578D61C05462F00795C48 /* SquareRequest.m */,
 				D51578D81C05464500795C48 /* DetailRequest.h */,
 				D51578D91C05464500795C48 /* DetailRequest.m */,
+				D5157A551C057C6B00795C48 /* ChangeAvatarRequest.h */,
+				D5157A561C057C6B00795C48 /* ChangeAvatarRequest.m */,
 			);
 			name = Requests;
 			path = AbMoran/Network/Requests;
@@ -592,6 +600,8 @@
 				D5157A411C0553A000795C48 /* HeadImageViewController.m */,
 				D5157A421C0553A000795C48 /* MyViewController.h */,
 				D5157A431C0553A000795C48 /* MyViewController.m */,
+				D5157A4F1C05792700795C48 /* HomePageViewController.h */,
+				D5157A501C05792700795C48 /* HomePageViewController.m */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -818,6 +828,7 @@
 				D5157A2D1C05511900795C48 /* SDWebImageDecoder.m in Sources */,
 				D51578EF1C054B3100795C48 /* CommentList.m in Sources */,
 				D5157A351C05511900795C48 /* UIImage+WebP.m in Sources */,
+				D5157A511C05792700795C48 /* HomePageViewController.m in Sources */,
 				D5157A291C05511900795C48 /* MKAnnotationView+WebCache.m in Sources */,
 				D51578E61C05495A00795C48 /* SquareCell.m in Sources */,
 				D51578B31C040CD600795C48 /* GetImage.m in Sources */,
@@ -868,6 +879,7 @@
 				D5157A271C05511900795C48 /* UIScrollView+MJRefresh.m in Sources */,
 				D5157A151C05511900795C48 /* KxMenu.m in Sources */,
 				D5157A2B1C05511900795C48 /* SDImageCache.m in Sources */,
+				D5157A571C057C6B00795C48 /* ChangeAvatarRequest.m in Sources */,
 				D5157A191C05511900795C48 /* MJRefreshFooter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
