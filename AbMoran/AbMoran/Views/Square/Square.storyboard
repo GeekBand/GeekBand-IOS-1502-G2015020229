@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Square View Controller-->
         <scene sceneID="WwX-Tx-XzK">
             <objects>
-                <viewController storyboardIdentifier="SquareStoryboard" id="sNt-XG-UXC" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SquareStoryboard" id="sNt-XG-UXC" customClass="SquareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2LX-gI-55A"/>
                         <viewControllerLayoutGuide type="bottom" id="PNc-yL-e0M"/>
@@ -23,7 +23,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="squareCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="squareCell" rowHeight="188" id="lqf-fT-dIE" customClass="JYSquareCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="squareCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="squareCell" rowHeight="188" id="lqf-fT-dIE" customClass="SquareCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="188"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lqf-fT-dIE" id="0c9-vj-6ag">
@@ -68,7 +68,7 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="collectionCell" id="894-NW-hW4" customClass="JYSquareCollectionCell">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="collectionCell" id="894-NW-hW4" customClass="SquareCollectionCell">
                                                             <rect key="frame" x="0.0" y="8" width="140" height="130"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">

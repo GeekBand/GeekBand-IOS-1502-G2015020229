@@ -145,14 +145,14 @@
 		D51578DF1C0546F600795C48 /* DetailRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailRequestParser.m; path = AbMoran/Network/Parsers/DetailRequestParser.m; sourceTree = SOURCE_ROOT; };
 		D51578E11C05477100795C48 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
 		D51578E21C05477100795C48 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
-		D51578E41C05495A00795C48 /* SquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareCell.h; sourceTree = "<group>"; };
-		D51578E51C05495A00795C48 /* SquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareCell.m; sourceTree = "<group>"; };
-		D51578E71C0549F800795C48 /* SquareCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareCollectionCell.h; sourceTree = "<group>"; };
-		D51578E81C0549F800795C48 /* SquareCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareCollectionCell.m; sourceTree = "<group>"; };
+		D51578E41C05495A00795C48 /* SquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SquareCell.h; path = ../Models/SquareCell.h; sourceTree = "<group>"; };
+		D51578E51C05495A00795C48 /* SquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SquareCell.m; path = ../Models/SquareCell.m; sourceTree = "<group>"; };
+		D51578E71C0549F800795C48 /* SquareCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SquareCollectionCell.h; path = ../Models/SquareCollectionCell.h; sourceTree = "<group>"; };
+		D51578E81C0549F800795C48 /* SquareCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SquareCollectionCell.m; path = ../Models/SquareCollectionCell.m; sourceTree = "<group>"; };
 		D51578EA1C054A8E00795C48 /* DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
 		D51578EB1C054A8E00795C48 /* DetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
-		D51578ED1C054B3100795C48 /* CommentList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentList.h; sourceTree = "<group>"; };
-		D51578EE1C054B3100795C48 /* CommentList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentList.m; sourceTree = "<group>"; };
+		D51578ED1C054B3100795C48 /* CommentList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommentList.h; path = ../Models/CommentList.h; sourceTree = "<group>"; };
+		D51578EE1C054B3100795C48 /* CommentList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommentList.m; path = ../Models/CommentList.m; sourceTree = "<group>"; };
 		D51579C01C05511900795C48 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
 		D51579C11C05511900795C48 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
 		D51579C41C05511900795C48 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
@@ -313,12 +313,6 @@
 				D51578D31C0545E700795C48 /* Detail.m */,
 				D51578E11C05477100795C48 /* Picture.h */,
 				D51578E21C05477100795C48 /* Picture.m */,
-				D51578E41C05495A00795C48 /* SquareCell.h */,
-				D51578E51C05495A00795C48 /* SquareCell.m */,
-				D51578E71C0549F800795C48 /* SquareCollectionCell.h */,
-				D51578E81C0549F800795C48 /* SquareCollectionCell.m */,
-				D51578ED1C054B3100795C48 /* CommentList.h */,
-				D51578EE1C054B3100795C48 /* CommentList.m */,
 			);
 			name = Models;
 			path = AbMoran/Models;
@@ -421,6 +415,12 @@
 		D51578CC1C0467F000795C48 /* Square */ = {
 			isa = PBXGroup;
 			children = (
+				D51578E41C05495A00795C48 /* SquareCell.h */,
+				D51578E51C05495A00795C48 /* SquareCell.m */,
+				D51578E71C0549F800795C48 /* SquareCollectionCell.h */,
+				D51578E81C0549F800795C48 /* SquareCollectionCell.m */,
+				D51578ED1C054B3100795C48 /* CommentList.h */,
+				D51578EE1C054B3100795C48 /* CommentList.m */,
 				D51578C41C04646A00795C48 /* SquareViewController.h */,
 				D51578C51C04646A00795C48 /* SquareViewController.m */,
 				D51578EA1C054A8E00795C48 /* DetailController.h */,
