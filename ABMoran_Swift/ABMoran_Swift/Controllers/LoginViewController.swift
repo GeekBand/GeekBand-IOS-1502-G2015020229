@@ -55,7 +55,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
                     self.noticeError("账户不存在!")
                 case "Wrong password":
                     self.noticeError("密码不正确!")
-                default:self.noticeError("异常!")
+                default:self.noticeError("出错啦!")
                 }
             }else{
                 print(error)

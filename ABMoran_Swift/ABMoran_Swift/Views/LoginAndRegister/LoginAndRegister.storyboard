@@ -128,7 +128,7 @@
         <!--Register View Controller-->
         <scene sceneID="sBZ-bl-Vbo">
             <objects>
-                <viewController id="BEZ-a3-a7e" customClass="RegisterViewController" sceneMemberID="viewController">
+                <viewController id="BEZ-a3-a7e" customClass="RegisterViewController" customModule="ABMoran_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K2J-8G-4Mg"/>
                         <viewControllerLayoutGuide type="bottom" id="H5t-kT-Jhs"/>
@@ -210,7 +210,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButtonClicked:" destination="BEZ-a3-a7e" eventType="touchUpInside" id="cJc-7U-Vvj"/>
+                                    <segue destination="0zE-E1-Eku" kind="show" id="qna-YK-VRE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O35-2z-8Qv">

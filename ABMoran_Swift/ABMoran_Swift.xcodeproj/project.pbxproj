@@ -10,7 +10,6 @@
 		D5157A7F1C05862100795C48 /* ABMoran_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157A7E1C05862100795C48 /* ABMoran_SwiftTests.swift */; };
 		D5157A8A1C05862100795C48 /* ABMoran_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157A891C05862100795C48 /* ABMoran_SwiftUITests.swift */; };
 		D5157AA31C0586DF00795C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157A991C0586DF00795C48 /* AppDelegate.swift */; };
-		D5157AA61C0586DF00795C48 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5157A9F1C0586DF00795C48 /* Info.plist */; };
 		D5157AB31C05874600795C48 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5157AAD1C05874600795C48 /* My.storyboard */; };
 		D5157AB41C05874600795C48 /* Square.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5157AAF1C05874600795C48 /* Square.storyboard */; };
 		D5157AB51C05874600795C48 /* ViewDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5157AB01C05874600795C48 /* ViewDetail.storyboard */; };
@@ -21,6 +20,7 @@
 		D5157BB71C05960100795C48 /* LoginAndRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5157BB61C05960100795C48 /* LoginAndRegister.storyboard */; };
 		D5157BBC1C05986500795C48 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157BBB1C05986500795C48 /* SwiftNotice.swift */; };
 		D5157BC11C05A19E00795C48 /* SquareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157BC01C05A19E00795C48 /* SquareController.swift */; };
+		D5157BC71C05AFE300795C48 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157BC61C05AFE300795C48 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +102,7 @@
 		D5157BB61C05960100795C48 /* LoginAndRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginAndRegister.storyboard; sourceTree = "<group>"; };
 		D5157BBB1C05986500795C48 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		D5157BC01C05A19E00795C48 /* SquareController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareController.swift; sourceTree = "<group>"; };
+		D5157BC61C05AFE300795C48 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +196,7 @@
 			children = (
 				D5157ABC1C05885600795C48 /* LoginViewController.swift */,
 				D5157BC01C05A19E00795C48 /* SquareController.swift */,
+				D5157BC61C05AFE300795C48 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -444,7 +446,6 @@
 				D5157ABB1C05876F00795C48 /* Main.xcassets in Resources */,
 				D5157ABA1C05876F00795C48 /* Images.xcassets in Resources */,
 				D5157AB41C05874600795C48 /* Square.storyboard in Resources */,
-				D5157AA61C0586DF00795C48 /* Info.plist in Resources */,
 				D5157AB31C05874600795C48 /* My.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5157ABD1C05885600795C48 /* LoginViewController.swift in Sources */,
+				D5157BC71C05AFE300795C48 /* RegisterViewController.swift in Sources */,
 				D5157AA31C0586DF00795C48 /* AppDelegate.swift in Sources */,
 				D5157BC11C05A19E00795C48 /* SquareController.swift in Sources */,
 				D5157BBC1C05986500795C48 /* SwiftNotice.swift in Sources */,
@@ -598,6 +600,8 @@
 		D5157A8F1C05862100795C48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "$(SRCROOT)/ABMoran_Swift/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Geekband.ABMoran-Swift";
@@ -608,6 +612,8 @@
 		D5157A901C05862100795C48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "$(SRCROOT)/ABMoran_Swift/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Geekband.ABMoran-Swift";
