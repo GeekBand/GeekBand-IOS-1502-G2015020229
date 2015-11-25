@@ -7,12 +7,85 @@
 //
 
 #import "AppDelegate.h"
+#import "SquareViewController.h"
+#import "MyViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
+- (void)loadMainViewWithController:(UIViewController *)controller {
+    // square
+    UIStoryboard *squareStoryboard = [UIStoryboard storyboardWithName:@"Square" bundle:[NSBundle mainBundle]];
+    SquareViewController *squareVC = [squareStoryboard instantiateViewControllerWithIdentifier:@"SquareStoryboard"];
+    //    squareVC.view.backgroundColor = [UIColor redColor];
+    UINavigationController *squareNav = [[UINavigationController alloc]initWithRootViewController:squareVC];
+    squareNav.navigationBar.barTintColor = [[UIColor alloc]initWithRed:230/255.0 green:106/255.0 blue:58/255.0 alpha:1];
+    squareNav.tabBarItem.title = @"广场";
+    squareNav.tabBarItem.image = [UIImage imageNamed:@"square"];
+    
+    // my
+    UIStoryboard *myStoryboard = [UIStoryboard storyboardWithName:@"My" bundle:[NSBundle mainBundle]];
+    MyViewController *myVC = [myStoryboard instantiateViewControllerWithIdentifier:@"MyStoryboard"];
+    myVC.tabBarItem.title = @"我的";
+    myVC.tabBarItem.image = [UIImage imageNamed:@"my"];
+    
+    self.tabBarController = [[UITabBarController alloc]init];
+    self.tabBarController.viewControllers = @[squareNav, myVC];
+    
+    [controller presentViewController:self.tabBarController animated:YES completion:nil];
+    
+    // publish
+    CGFloat viewWidth = [UIScreen mainScreen].bounds.size.width;
+    UIButton *photoButton = [[UIButton alloc]initWithFrame:CGRectMake(viewWidth/2-60, -25, 120, 50)];
+    [photoButton setImage:[UIImage imageNamed:@"publish"] forState:UIControlStateNormal];
+    [photoButton addTarget:self action:@selector(photoButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.tabBarController.tabBar addSubview:photoButton];
+}
+
+- (void)photoButtonClicked {
+    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:nil
+                                                      delegate:self
+                                             cancelButtonTitle:@"取消"
+                                        destructiveButtonTitle:nil
+                                             otherButtonTitles:@"拍照",@"从手机相册选择", nil];
+    [sheet showInView:self.tabBarController.view];
+    
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    self.pickerController = [[UIImagePickerController alloc]init];
+    if (buttonIndex == 0) {
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+            self.pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+            self.pickerController.allowsEditing = NO;
+            self.pickerController.delegate = self;
+            [self.tabBarController presentViewController:self.pickerController animated:YES completion:nil];
+        } else {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误"
+                                                           message:@"无法获取照相机"
+                                                          delegate:nil
+                                                 cancelButtonTitle:@"确定"
+                                                 otherButtonTitles:nil];
+            [alert show];
+            return;
+        }
+    } else if (buttonIndex == 1) {
+        self.pickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        self.pickerController.delegate = self;
+        [self.tabBarController presentViewController:self.pickerController animated:YES completion:nil];
+    }
+}
+
+
+- (void)loadLoginView {
+    UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"LoginAndRegister" bundle:[NSBundle mainBundle]];
+    LoginViewController *loginController = [loginStoryboard instantiateViewControllerWithIdentifier:@"LoginStoryboard"];
+    [loginController dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

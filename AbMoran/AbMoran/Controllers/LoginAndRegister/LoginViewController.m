@@ -24,8 +24,8 @@
     self.emailTextField.delegate = self;
     self.passwordTextField.delegate = self;
     
-    self.emailTextField.text = @"278726744@qq.com";
-    self.passwordTextField.text = @"278726744";
+    self.emailTextField.text = @"278726743@qq.com";
+    self.passwordTextField.text = @"278726743";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,7 +86,7 @@
         [Global shareGlobal].user.email = self.emailTextField.text;
          GetImage *getImage = [[GetImage alloc]init];
         [getImage sendGetImageRequest];
-        //[appDelegate loadMainViewWithController:self];
+        [appDelegate loadMainViewWithController:self];
     } else {
         NSLog(@"服务器错误:%@", user.loginReturnMessage);
     }
