@@ -31,7 +31,6 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
     @IBAction func registerButtonClicked(sender: AnyObject) {
         if (checkInput()){
             self.pleaseWait()
-            
             let parameters = [
                 "username":"\(userNameTextField.text!)",
                 "password":"\(passwordTextField.text!)",
@@ -40,10 +39,10 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
             ]
             
             Alamofire.request(.POST, "http://moran.chinacloudapp.cn/moran/web/user/register", parameters: parameters).response { (request, urlresquest, data, error) -> Void in
+                self.clearAllNotice()
                 if error == nil{
                     let json : AnyObject! = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
                     let message: String = json.objectForKey("message") as! String
-                    self.clearAllNotice()
                     switch message
                     {
                     case "Register success":
@@ -87,24 +86,5 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
             return false
         }
         return true
-    }
-    
-    @IBAction func touchDownAction(textField: UITextField){
-        textField.resignFirstResponder();
-        self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-    }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    func textFieldDidEndEditing(textField: UITextField) {
-        let animationDuration:NSTimeInterval = 0.3
-        UIView.beginAnimations("ResizeForKeyboard", context: nil)
-        UIView.setAnimationDuration(animationDuration)
-        self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-        UIView.commitAnimations()
-        
     }
 }

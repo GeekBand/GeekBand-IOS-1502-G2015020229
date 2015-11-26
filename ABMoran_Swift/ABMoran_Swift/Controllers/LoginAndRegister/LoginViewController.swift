@@ -28,11 +28,12 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
             "email":"\(emailTextField.text!)",
             "password":"\(passwordTextField.text!)"
         ]
+        
         Alamofire.request(.POST, "http://moran.chinacloudapp.cn/moran/web/user/login", parameters: parameters).response { (request, urlresquest, data, error) -> Void in
+            self.clearAllNotice()
             if error == nil{
                 let json : AnyObject! = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
                 let message: String = json.objectForKey("message") as! String
-                self.clearAllNotice()
                 switch message
                 {
                 case "Login success":
@@ -45,8 +46,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
                     user.setObject("G2015020229", forKey: "gbid")
                     
                     dispatch_async(dispatch_get_main_queue(),{
-                        let squareStoryBoard = UIStoryboard(name: "Square", bundle: nil)
-                        let main:SquareController = squareStoryBoard.instantiateViewControllerWithIdentifier("SquareStoryboard") as! SquareController
+                        let settingsStoryBoard = UIStoryboard(name: "Settings", bundle: nil)
+                        let main:NavigationController = settingsStoryBoard.instantiateViewControllerWithIdentifier("SettingsStoryboard") as! NavigationController
                         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                         appDelegate.window?.rootViewController = main
                     })
@@ -61,38 +62,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
                 print(error)
             }
         }
-    }
-
-    
-    // MARK: - 键盘遮挡事件
-    
-    func touchDownAction(textField: UITextField) {
-        let frame:CGRect = textField.frame;
-        let offset = frame.origin.y + 92 - (self.view.frame.size.height - 216.0);//键盘高度216
-        
-        let animationDuration:NSTimeInterval = 0.3
-        UIView.beginAnimations("ResizeForKeyboard", context: nil)
-        UIView.setAnimationDuration(animationDuration)
-        //将视图的Y坐标向上移动offset个单位，以使下面腾出地方用于软键盘的显示
-        if(offset > 0)
-        {
-            self.view.frame = CGRectMake(0.0, -offset, self.view.frame.size.width, self.view.frame.size.height)
-        }
-        UIView.commitAnimations()
-        
-    }
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    func textFieldDidEndEditing(textField: UITextField) {
-        let animationDuration:NSTimeInterval = 0.3
-        UIView.beginAnimations("ResizeForKeyboard", context: nil)
-        UIView.setAnimationDuration(animationDuration)
-        self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-        UIView.commitAnimations()
-        
     }
 
     

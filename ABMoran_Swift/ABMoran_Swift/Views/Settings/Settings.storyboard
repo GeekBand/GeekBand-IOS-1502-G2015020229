@@ -8,7 +8,7 @@
         <!--我的-->
         <scene sceneID="7gi-PA-IKT">
             <objects>
-                <tableViewController title="我的" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sni-tA-ifl" customClass="MyViewController" sceneMemberID="viewController">
+                <tableViewController title="我的" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sni-tA-ifl" customClass="SettingsController" customModule="ABMoran_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9me-1A-7jT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
                                         <constraint firstAttribute="height" constant="150" id="jmn-jH-h4k"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个人类" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vi-Yk-LXm">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vi-Yk-LXm">
                                     <rect key="frame" x="0.0" y="70" width="320" height="21"/>
                                     <animations/>
                                     <accessibility key="accessibilityConfiguration" identifier="nickNameLabel" label="">
@@ -35,7 +35,7 @@
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" jiang.yu@carestream.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Sq-G1-yxH">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="278726743@qq.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Sq-G1-yxH">
                                     <rect key="frame" x="0.0" y="101" width="320" height="21"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -258,7 +258,7 @@
         <!--更改昵称-->
         <scene sceneID="2fx-b6-1rZ">
             <objects>
-                <viewController id="hKq-zF-cWm" customClass="NickNameViewController" sceneMemberID="viewController">
+                <viewController id="hKq-zF-cWm" customClass="NickNameController" customModule="ABMoran_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LMP-G7-P0c"/>
                         <viewControllerLayoutGuide type="bottom" id="hkZ-iz-BwN"/>
@@ -337,7 +337,7 @@
         <!--设置头像-->
         <scene sceneID="tXp-vm-s5W">
             <objects>
-                <viewController storyboardIdentifier="HeadImageStoryboard" id="PHF-Fv-wtr" customClass="HeadImageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HeadImageStoryboard" id="PHF-Fv-wtr" customClass="AvatarController" customModule="ABMoran_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k9x-fn-uZb"/>
                         <viewControllerLayoutGuide type="bottom" id="r9l-C8-Iql"/>
@@ -376,6 +376,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="设置头像" id="2si-MB-uoX">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="JIQ-SF-4go">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="m3F-rW-qoi">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="取消"/>
+                                <connections>
+                                    <action selector="CancelEdit:" destination="PHF-Fv-wtr" eventType="touchUpInside" id="RpQ-WA-Y7t"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="确定" id="0Fw-bK-5lF">
                             <connections>
                                 <action selector="doneButtonClicked:" destination="PHF-Fv-wtr" id="110-ra-dBX"/>
@@ -394,7 +405,7 @@
         <!--MyNav-->
         <scene sceneID="swl-5I-qqn">
             <objects>
-                <navigationController storyboardIdentifier="MyStoryboard" title="MyNav" automaticallyAdjustsScrollViewInsets="NO" id="uoo-as-Mqe" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SettingsStoryboard" title="MyNav" automaticallyAdjustsScrollViewInsets="NO" id="uoo-as-Mqe" customClass="NavigationController" customModule="ABMoran_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的" image="my" id="SOR-Bt-OXh"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
