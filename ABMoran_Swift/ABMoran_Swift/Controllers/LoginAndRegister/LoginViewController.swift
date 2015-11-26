@@ -14,6 +14,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    let user = NSUserDefaults.standardUserDefaults();
+    
     @IBAction func loginButtonClicked(sender: AnyObject) {
 
         if(emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty)
@@ -38,20 +40,12 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
                 {
                 case "Login success":
                     let data = json.objectForKey("data")!;
-                    let user = NSUserDefaults.standardUserDefaults();
-                    user.setObject(data.objectForKey("user_id"), forKey: "user_id")
-                    user.setObject(data.objectForKey("user_name"), forKey: "user_name")
-                    user.setObject(data.objectForKey("token"), forKey: "token")
-                    user.setObject(self.emailTextField.text, forKey: "user_Email")
-                    user.setObject("G2015020229", forKey: "gbid")
-                    
-                    dispatch_async(dispatch_get_main_queue(),{
-                        let settingsStoryBoard = UIStoryboard(name: "Settings", bundle: nil)
-                        let main:NavigationController = settingsStoryBoard.instantiateViewControllerWithIdentifier("SettingsStoryboard") as! NavigationController
-                        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                        appDelegate.window?.rootViewController = main
-                    })
-                  
+                    self.user.setObject(data.objectForKey("user_id"), forKey: "user_id")
+                    self.user.setObject(data.objectForKey("user_name"), forKey: "user_name")
+                    self.user.setObject(data.objectForKey("token"), forKey: "token")
+                    self.user.setObject(self.emailTextField.text, forKey: "user_Email")
+                    self.user.setObject("G2015020229", forKey: "gbid")
+                    Navigator.GotoSquare()
                 case "No such user":
                     self.noticeError("账户不存在!")
                 case "Wrong password":
@@ -64,16 +58,13 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
         }
     }
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.emailTextField.delegate = self;
-        self.passwordTextField.delegate = self;
-        
         self.emailTextField.text = "278726743@qq.com";
         self.passwordTextField.text = "278726743";
-        // Do any additional setup after loading the view, typically from a nib.
+        self.emailTextField.delegate = self;
+        self.passwordTextField.delegate = self;
     }
     
     override func didReceiveMemoryWarning() {

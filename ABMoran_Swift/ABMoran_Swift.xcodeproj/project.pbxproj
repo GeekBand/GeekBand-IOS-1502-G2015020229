@@ -27,6 +27,8 @@
 		D5157BDF1C06B97000795C48 /* NickNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157BDE1C06B97000795C48 /* NickNameController.swift */; };
 		D5157BE11C06CB7800795C48 /* AvatarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157BE01C06CB7800795C48 /* AvatarController.swift */; };
 		D5157BE51C06E54A00795C48 /* BLMultipartForm.m in Sources */ = {isa = PBXBuildFile; fileRef = D5157BE41C06E54A00795C48 /* BLMultipartForm.m */; };
+		D5157BE71C06E9E800795C48 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157BE61C06E9E800795C48 /* HomePageController.swift */; };
+		D5157BE91C06F41E00795C48 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157BE81C06F41E00795C48 /* Navigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		D5157BE21C06E54A00795C48 /* ABMoran_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ABMoran_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		D5157BE31C06E54A00795C48 /* BLMultipartForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMultipartForm.h; sourceTree = "<group>"; };
 		D5157BE41C06E54A00795C48 /* BLMultipartForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMultipartForm.m; sourceTree = "<group>"; };
+		D5157BE61C06E9E800795C48 /* HomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		D5157BE81C06F41E00795C48 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +274,7 @@
 		D5157AC01C058B9100795C48 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D5157BE81C06F41E00795C48 /* Navigator.swift */,
 				D5157BE21C06E54A00795C48 /* ABMoran_Swift-Bridging-Header.h */,
 				D5157BE31C06E54A00795C48 /* BLMultipartForm.h */,
 				D5157BE41C06E54A00795C48 /* BLMultipartForm.m */,
@@ -323,6 +328,7 @@
 				D5157BD91C06B93500795C48 /* SettingsController.swift */,
 				D5157BDE1C06B97000795C48 /* NickNameController.swift */,
 				D5157BE01C06CB7800795C48 /* AvatarController.swift */,
+				D5157BE61C06E9E800795C48 /* HomePageController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -512,8 +518,10 @@
 				D5157BDD1C06B93500795C48 /* SettingsController.swift in Sources */,
 				D5157AA31C0586DF00795C48 /* AppDelegate.swift in Sources */,
 				D5157BC11C05A19E00795C48 /* SquareController.swift in Sources */,
+				D5157BE91C06F41E00795C48 /* Navigator.swift in Sources */,
 				D5157BE51C06E54A00795C48 /* BLMultipartForm.m in Sources */,
 				D5157BCF1C06AEA100795C48 /* BaseUIViewController.swift in Sources */,
+				D5157BE71C06E9E800795C48 /* HomePageController.swift in Sources */,
 				D5157BDB1C06B93500795C48 /* RegisterViewController.swift in Sources */,
 				D5157BDF1C06B97000795C48 /* NickNameController.swift in Sources */,
 				D5157BDA1C06B93500795C48 /* LoginViewController.swift in Sources */,

@@ -298,10 +298,10 @@
             </objects>
             <point key="canvasLocation" x="1302" y="-212"/>
         </scene>
-        <!--Home Page View Controller-->
+        <!--Home Page Controller-->
         <scene sceneID="7D1-sG-QAr">
             <objects>
-                <viewController id="mUN-BG-by0" customClass="HomePageViewController" sceneMemberID="viewController">
+                <viewController id="mUN-BG-by0" customClass="HomePageController" customModule="ABMoran_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IwU-iK-AiC"/>
                         <viewControllerLayoutGuide type="bottom" id="ke6-Ju-l2r"/>

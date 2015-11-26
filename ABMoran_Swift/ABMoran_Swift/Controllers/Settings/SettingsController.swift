@@ -51,4 +51,39 @@ class SettingsController: UITableViewController {
         let str = val.object as! String
         self.nickNameLabel.text = str
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if(indexPath.section == 0)
+        {
+            if(indexPath.row == 2)
+            {
+                let alert = UIAlertController(title: nil, message: "你确定要注销当前用户么?", preferredStyle:UIAlertControllerStyle.ActionSheet)
+                alert.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler:nil))
+                alert.addAction(UIAlertAction(title: "注销", style: UIAlertActionStyle.Destructive, handler: { (UIAlertAction) -> Void in
+                    NSUserDefaults.standardUserDefaults().removeObjectForKey("token")
+                    let loginStoryBoard = UIStoryboard(name: "LoginAndRegister", bundle: nil)
+                    let main:LoginViewController = loginStoryBoard.instantiateViewControllerWithIdentifier("LoginStoryboard") as! LoginViewController
+                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    appDelegate.window?.rootViewController = main
+                }))
+                
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+        }
+        if (indexPath.section==1){
+            if(indexPath.row == 0)
+            {
+                //评价
+                let appid = "123456"
+                let appstoreUrlString = String(format: "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@", appid)
+                UIApplication.sharedApplication().openURL(NSURL(string:appstoreUrlString)!)
+            }
+            if(indexPath.row == 1)
+            {
+                //关注
+            }
+        }
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
 }
