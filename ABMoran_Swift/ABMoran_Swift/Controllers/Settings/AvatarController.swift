@@ -19,41 +19,52 @@ class AvatarController : UIViewController,UIImagePickerControllerDelegate,UINavi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        getAvatar()
+        headImageView.layer.cornerRadius = CGRectGetHeight(headImageView.bounds) / 2
+        headImageView.layer.masksToBounds = true;
+        
+        headImageView.layer.cornerRadius = 16;
+        headImageView.layer.cornerRadius = 16
+        getAvatar()
     }
     
-//    func getAvatar(){
-//        let parameters = [
-//            "user_id":user.objectForKey("user_id")!
-//        ]
-//        Alamofire.request(.GET, "http://moran.chinacloudapp.cn/moran/web/user/show", parameters: parameters).response { (request, urlresquest, data, error) -> Void in
-//            if error == nil{
-//                self.headImageView.image = UIImage(data: data!)
-//            }else{
-//                print(error);
-//            }
-//        }
+    func getAvatar(){
+        let parameters = [
+            "user_id":user.objectForKey("user_id")!
+        ]
+        Alamofire.request(.GET, "http://moran.chinacloudapp.cn/moran/web/user/show", parameters: parameters).response { (request, urlresquest, data, error) -> Void in
+            if error == nil{
+                self.headImageView.image = UIImage(data: data!)
+            }else{
+                print(error);
+            }
+        }
+    }
+    
+//    func scaleToSize(size: CGSize, image:UIImage)->UIImage{
+//        UIGraphicsBeginImageContext(size);
+//        image.drawInRect(CGRectMake(0, 0, size.width, size.height))
+//        let scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+//        UIGraphicsEndImageContext();
+//        return scaledImage;
 //    }
-//    
-
-    
-    func scaleToSize(size: CGSize, image:UIImage)->UIImage{
-        UIGraphicsBeginImageContext(size);
-        image.drawInRect(CGRectMake(0, 0, size.width, size.height))
-        let scaledImage = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        return scaledImage;   //返回的就是已经改变的图片
-    }
     
     @IBAction func doneButtonClicked(sender: AnyObject) {
-        let image:NSData = UIImageJPEGRepresentation(headImageView.image!,0.00001)!
-        let parameters = [
-            "user_id":user.stringForKey("user_id")!,
-            "token":user.stringForKey("token")!,
-            "data":image
-        ]
         self.pleaseWait()
-        Alamofire.request(.POST, "http://moran.chinacloudapp.cn/moran/web/user/avatar", parameters: parameters).response { (request, urlresquest, data, error) -> Void in
+        let imageData:NSData = UIImageJPEGRepresentation(headImageView.image!,0.1)!
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://moran.chinacloudapp.cn/moran/web/user/avatar")!)
+        request.HTTPMethod = "POST"
+        request.timeoutInterval = 10
+        
+        let form:BLMultipartForm = BLMultipartForm()
+        form.addValue(user.stringForKey("user_id")!, forField: "user_id")
+        form.addValue(user.stringForKey("token")!, forField: "token")
+        form.addValue(imageData, forField: "data")
+        
+        request.addValue(form.contentType(), forHTTPHeaderField: "Content-Type")
+        request.HTTPBody = form.httpBody()
+        
+        let session = NSURLSession.sharedSession()
+        let task:NSURLSessionDataTask = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
             self.clearAllNotice()
             if error == nil{
                 let json : AnyObject! = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
@@ -61,16 +72,18 @@ class AvatarController : UIViewController,UIImagePickerControllerDelegate,UINavi
                 if message == "Update success"{
                     dispatch_async(dispatch_get_main_queue(),{
                         NSNotificationCenter.defaultCenter().postNotificationName("updateAvatar", object: nil)
+                        self.noticeSuccess("上传成功!")
                         self.navigationController?.popToRootViewControllerAnimated(true)
-                        self.noticeSuccess("修改成功!")
                     })
-                }else{
+                }
+                else{
                     dispatch_async(dispatch_get_main_queue(),{
                         self.noticeError("上传失败!")
                     })
                 }
             }
         }
+        task.resume()
     }
 
     @IBAction func editHeadImageClicked(sender: AnyObject) {

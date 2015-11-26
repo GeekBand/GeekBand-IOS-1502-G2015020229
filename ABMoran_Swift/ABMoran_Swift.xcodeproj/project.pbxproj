@@ -26,6 +26,7 @@
 		D5157BDD1C06B93500795C48 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157BD91C06B93500795C48 /* SettingsController.swift */; };
 		D5157BDF1C06B97000795C48 /* NickNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157BDE1C06B97000795C48 /* NickNameController.swift */; };
 		D5157BE11C06CB7800795C48 /* AvatarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157BE01C06CB7800795C48 /* AvatarController.swift */; };
+		D5157BE51C06E54A00795C48 /* BLMultipartForm.m in Sources */ = {isa = PBXBuildFile; fileRef = D5157BE41C06E54A00795C48 /* BLMultipartForm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,9 @@
 		D5157BD91C06B93500795C48 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		D5157BDE1C06B97000795C48 /* NickNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NickNameController.swift; sourceTree = "<group>"; };
 		D5157BE01C06CB7800795C48 /* AvatarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarController.swift; sourceTree = "<group>"; };
+		D5157BE21C06E54A00795C48 /* ABMoran_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ABMoran_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		D5157BE31C06E54A00795C48 /* BLMultipartForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMultipartForm.h; sourceTree = "<group>"; };
+		D5157BE41C06E54A00795C48 /* BLMultipartForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMultipartForm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +270,9 @@
 		D5157AC01C058B9100795C48 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D5157BE21C06E54A00795C48 /* ABMoran_Swift-Bridging-Header.h */,
+				D5157BE31C06E54A00795C48 /* BLMultipartForm.h */,
+				D5157BE41C06E54A00795C48 /* BLMultipartForm.m */,
 				D5157BCE1C06AEA100795C48 /* BaseUIViewController.swift */,
 				D5157BBB1C05986500795C48 /* SwiftNotice.swift */,
 				D5157B5B1C058C3B00795C48 /* Alamofire */,
@@ -505,6 +512,7 @@
 				D5157BDD1C06B93500795C48 /* SettingsController.swift in Sources */,
 				D5157AA31C0586DF00795C48 /* AppDelegate.swift in Sources */,
 				D5157BC11C05A19E00795C48 /* SquareController.swift in Sources */,
+				D5157BE51C06E54A00795C48 /* BLMultipartForm.m in Sources */,
 				D5157BCF1C06AEA100795C48 /* BaseUIViewController.swift in Sources */,
 				D5157BDB1C06B93500795C48 /* RegisterViewController.swift in Sources */,
 				D5157BDF1C06B97000795C48 /* NickNameController.swift in Sources */,
@@ -638,10 +646,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/ABMoran_Swift/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Geekband.ABMoran-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ABMoran_Swift/Libraries/ABMoran_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -650,10 +661,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/ABMoran_Swift/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Geekband.ABMoran-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ABMoran_Swift/Libraries/ABMoran_Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
