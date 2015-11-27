@@ -107,6 +107,7 @@ class AvatarController : UIViewController,UIImagePickerControllerDelegate,UINavi
 //        let imagePicker = ImagePicker(action: { (image) -> Void in
 //            Navigator.GotoPublish(image)
 //        })
+//        imagePicker.pickImage()
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {

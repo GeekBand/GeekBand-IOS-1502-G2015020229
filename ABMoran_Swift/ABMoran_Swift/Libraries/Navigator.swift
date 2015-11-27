@@ -38,14 +38,16 @@ class Navigator {
     }
     
     class func GotoPublish(image:UIImage) {
-        dispatch_async(dispatch_get_main_queue(),{
-            let settingsStoryBoard = UIStoryboard(name: "Publish", bundle: nil)
-            let main:PublishController = settingsStoryBoard.instantiateViewControllerWithIdentifier("PublishStoryboard") as! PublishController
-            let nav = UINavigationController(rootViewController: main)
-            //main.photoView.image = image;
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            appDelegate.window?.rootViewController = nav
-        })
+//        dispatch_async(dispatch_get_main_queue(),{
+//     
+//        })
+        let settingsStoryBoard = UIStoryboard(name: "Publish", bundle: nil)
+        let main:PublishController = settingsStoryBoard.instantiateViewControllerWithIdentifier("PublishStoryboard") as! PublishController
+        let nav = UINavigationController(rootViewController: main)
+        main.img = image;
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.window?.rootViewController = nav
     }
     
    class func GotoMainView() {

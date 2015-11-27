@@ -7,12 +7,19 @@
 //
 
 import Foundation
+import UIKit
+import CoreLocation
 
-class PublishController : UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate ,UITextViewDelegate{
+class PublishController : UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate ,UITextViewDelegate,CLLocationManagerDelegate{
     
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var locationManager: CLLocationManager!
+    
+    var img:UIImage!
+    
+    //@property (strong, nonatomic) NSMutableDictionary *dic;
     
     let user = NSUserDefaults.standardUserDefaults();
     
@@ -27,9 +34,35 @@ class PublishController : UIViewController,UIImagePickerControllerDelegate,UINav
         title.text = "发布照片"
         title.textColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.addSubview(title)
+        photoView.image = img
         
         makePublishButton()
         makeBackButton()
+    }
+    
+    @IBAction func pickImage(sender: AnyObject){
+        let picker = UIImagePickerController()
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle:UIAlertControllerStyle.ActionSheet)
+        
+        alert.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler:nil))
+        alert.addAction(UIAlertAction(title: "拍照", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
+            picker.delegate = self
+            picker.sourceType = UIImagePickerControllerSourceType.Camera
+            self.presentViewController(picker, animated:true ,completion:nil)
+        }))
+        alert.addAction(UIAlertAction(title: "相册", style: UIAlertActionStyle.Default, handler: {
+            (UIAlertAction) -> Void in
+            picker.delegate = self
+            picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            self.presentViewController(picker, animated:true ,completion:nil)
+        }))
+        self.presentViewController(alert, animated:true ,completion:nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let image = info[UIImagePickerControllerOriginalImage] as? UIImage;
+        self.photoView.image = image;
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func makePublishButton(){
@@ -47,11 +80,91 @@ class PublishController : UIViewController,UIImagePickerControllerDelegate,UINav
     }
     
     func publishButtonClicked(){
+        self.pleaseWait()
+        let imageData:NSData = UIImageJPEGRepresentation(self.photoView.image!,0.1)!
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://moran.chinacloudapp.cn/moran/web/picture/create")!)
+        request.HTTPMethod = "POST"
+        request.timeoutInterval = 10
         
+        let form:BLMultipartForm = BLMultipartForm()
+        form.addValue(user.stringForKey("user_id")!, forField: "user_id")
+        form.addValue(user.stringForKey("token")!, forField: "token")
+        form.addValue(imageData, forField: "data")
+        form.addValue(textView.text, forField: "title")
+        
+        form.addValue("上海市浦东新区", forField: "location")
+        form.addValue("121.47794", forField: "longitude")
+        form.addValue("31.22516", forField: "latitude")
+        form.addValue("上海市浦东新区", forField: "addr")
+        
+        
+        request.addValue(form.contentType(), forHTTPHeaderField: "Content-Type")
+        request.HTTPBody = form.httpBody()
+        
+        let session = NSURLSession.sharedSession()
+        let task:NSURLSessionDataTask = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
+            self.clearAllNotice()
+            if error == nil{
+                //let json : AnyObject! = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
+                // let message: String = json.objectForKey("data") as! String
+                //                if message == "Update success"{
+                Navigator.GotoMainView()
+                self.noticeSuccess("上传成功!")
+                //                }
+                //                else{
+                //                    dispatch_async(dispatch_get_main_queue(),{
+                //                        self.noticeError("上传失败!")
+                //                    })
+                //                }
+            }
+        }
+        task.resume()
     }
     
     func touchDown(sender: AnyObject){
-    
+        
     }
+    
+    //    func getLatitudeAndLongitude(){
+    //        self.locationManager = [[CLLocationManager alloc]init];
+    //        self.locationManager.delegate = self;
+    //        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    //
+    //        self.locationManager.distanceFilter = 1000.0f;
+    //        if ([[[UIDevice currentDevice] systemVersion]floatValue] >= 8.0) {
+    //            [_locationManager requestWhenInUseAuthorization];
+    //        }
+    //        if ([CLLocationManager locationServicesEnabled]) {
+    //            [self.locationManager startUpdatingLocation];
+    //        } else {
+    //            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"定位失败" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"取消", nil];
+    //            [alert show];
+    //        }
+    //
+    //    }
+    //
+    //    func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
+    //        self.dic = [NSMutableDictionary dictionary];
+    //        NSString *latitudeString = [NSString stringWithFormat:@"%f", newLocation.coordinate.latitude];
+    //        NSString *longitudeString = [NSString stringWithFormat:@"%f", newLocation.coordinate.longitude];
+    //        [self.dic setValue:latitudeString forKey:@"latitude"];
+    //        [self.dic setValue:longitudeString forKey:@"longtitude"];
+    //        CLLocationDegrees latitude = newLocation.coordinate.latitude;
+    //        CLLocationDegrees longitude = newLocation.coordinate.longitude;
+    //        CLLocation *location = [[CLLocation alloc]initWithLatitude:latitude longitude:longitude];
+    //        CLGeocoder *geocoder = [[CLGeocoder alloc]init];
+    //        [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+    //        if (!error && [placemarks count] > 0) {
+    //        NSDictionary *dict = [[placemarks objectAtIndex:0] addressDictionary];
+    //        // TODO:
+    //        NSString *locationLabelText = dict[@"Name"];
+    //        
+    //        } else {
+    //        NSLog(@"Error: %@", error);
+    //        }
+    //        }];
+    //        [manager stopUpdatingLocation];
+    //    }
+    
     
 }
