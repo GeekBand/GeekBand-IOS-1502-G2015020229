@@ -36,4 +36,8 @@ class Navigator {
             appDelegate.window?.rootViewController = main
         })
     }
+    
+    class func GotoPublish(image:UIImage) {
+    
+    }
 }

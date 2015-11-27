@@ -140,7 +140,7 @@
 		D5157BE31C06E54A00795C48 /* BLMultipartForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMultipartForm.h; sourceTree = "<group>"; };
 		D5157BE41C06E54A00795C48 /* BLMultipartForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMultipartForm.m; sourceTree = "<group>"; };
 		D5157BE61C06E9E800795C48 /* HomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
-		D5157BE81C06F41E00795C48 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		D5157BE81C06F41E00795C48 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Navigator.swift; path = ../Libraries/Navigator.swift; sourceTree = "<group>"; };
 		D5157BEB1C06FEFB00795C48 /* SquareController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareController.swift; sourceTree = "<group>"; };
 		D5157BED1C07066E00795C48 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D5157BEF1C0706F800795C48 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
@@ -263,6 +263,7 @@
 		D5157A981C0586DF00795C48 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				D5157BE81C06F41E00795C48 /* Navigator.swift */,
 				D5157A991C0586DF00795C48 /* AppDelegate.swift */,
 			);
 			path = App;
@@ -333,15 +334,14 @@
 		D5157AC01C058B9100795C48 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D5157B5B1C058C3B00795C48 /* Alamofire */,
 				D5157BF71C07EAE400795C48 /* SDWebImage */,
 				D5157BED1C07066E00795C48 /* SwiftyJSON.swift */,
-				D5157BE81C06F41E00795C48 /* Navigator.swift */,
 				D5157BE21C06E54A00795C48 /* ABMoran_Swift-Bridging-Header.h */,
 				D5157BE31C06E54A00795C48 /* BLMultipartForm.h */,
 				D5157BE41C06E54A00795C48 /* BLMultipartForm.m */,
 				D5157BCE1C06AEA100795C48 /* BaseUIViewController.swift */,
 				D5157BBB1C05986500795C48 /* SwiftNotice.swift */,
-				D5157B5B1C058C3B00795C48 /* Alamofire */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
