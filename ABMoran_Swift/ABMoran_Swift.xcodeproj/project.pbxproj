@@ -50,6 +50,9 @@
 		D5157C261C07EAE400795C48 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D5157C141C07EAE400795C48 /* UIImageView+HighlightedWebCache.m */; };
 		D5157C271C07EAE400795C48 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D5157C161C07EAE400795C48 /* UIImageView+WebCache.m */; };
 		D5157C281C07EAE400795C48 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5157C181C07EAE400795C48 /* UIView+WebCacheOperation.m */; };
+		D5157C3B1C08249D00795C48 /* Publish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5157C3A1C08249D00795C48 /* Publish.storyboard */; };
+		D5157C3D1C0824C900795C48 /* PublishController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157C3C1C0824C900795C48 /* PublishController.swift */; };
+		D5157C411C083C2200795C48 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5157C401C083C2200795C48 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +183,9 @@
 		D5157C161C07EAE400795C48 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		D5157C171C07EAE400795C48 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		D5157C181C07EAE400795C48 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		D5157C3A1C08249D00795C48 /* Publish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Publish.storyboard; sourceTree = "<group>"; };
+		D5157C3C1C0824C900795C48 /* PublishController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishController.swift; sourceTree = "<group>"; };
+		D5157C401C083C2200795C48 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +271,7 @@
 			children = (
 				D5157BE81C06F41E00795C48 /* Navigator.swift */,
 				D5157A991C0586DF00795C48 /* AppDelegate.swift */,
+				D5157C401C083C2200795C48 /* ImagePicker.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -327,6 +334,7 @@
 			children = (
 				D5157AAF1C05874600795C48 /* Square.storyboard */,
 				D5157AB01C05874600795C48 /* ViewDetail.storyboard */,
+				D5157C3A1C08249D00795C48 /* Publish.storyboard */,
 			);
 			path = Square;
 			sourceTree = "<group>";
@@ -402,6 +410,7 @@
 				D5157BEB1C06FEFB00795C48 /* SquareController.swift */,
 				D5157BF31C070F3500795C48 /* SquareTableCell.swift */,
 				D5157BF51C070F7300795C48 /* PictureCollectionCell.swift */,
+				D5157C3C1C0824C900795C48 /* PublishController.swift */,
 			);
 			path = Square;
 			sourceTree = "<group>";
@@ -601,6 +610,7 @@
 				D5157BB71C05960100795C48 /* LoginAndRegister.storyboard in Resources */,
 				D5157AB51C05874600795C48 /* ViewDetail.storyboard in Resources */,
 				D5157ABB1C05876F00795C48 /* Main.xcassets in Resources */,
+				D5157C3B1C08249D00795C48 /* Publish.storyboard in Resources */,
 				D5157ABA1C05876F00795C48 /* Images.xcassets in Resources */,
 				D5157AB41C05874600795C48 /* Square.storyboard in Resources */,
 				D5157AB31C05874600795C48 /* Settings.storyboard in Resources */,
@@ -649,6 +659,7 @@
 				D5157C1A1C07EAE400795C48 /* NSData+ImageContentType.m in Sources */,
 				D5157C1C1C07EAE400795C48 /* SDWebImageCompat.m in Sources */,
 				D5157BCF1C06AEA100795C48 /* BaseUIViewController.swift in Sources */,
+				D5157C411C083C2200795C48 /* ImagePicker.swift in Sources */,
 				D5157BE71C06E9E800795C48 /* HomePageController.swift in Sources */,
 				D5157C1B1C07EAE400795C48 /* SDImageCache.m in Sources */,
 				D5157C1E1C07EAE400795C48 /* SDWebImageDownloader.m in Sources */,
@@ -662,6 +673,7 @@
 				D5157BDC1C06B93500795C48 /* NavigationController.swift in Sources */,
 				D5157BE11C06CB7800795C48 /* AvatarController.swift in Sources */,
 				D5157BBC1C05986500795C48 /* SwiftNotice.swift in Sources */,
+				D5157C3D1C0824C900795C48 /* PublishController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
