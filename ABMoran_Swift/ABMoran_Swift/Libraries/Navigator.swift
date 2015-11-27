@@ -21,8 +21,8 @@ class Navigator {
     
     class func GotoSquare() {
         dispatch_async(dispatch_get_main_queue(),{
-            let settingsStoryBoard = UIStoryboard(name: "Settings", bundle: nil)
-            let main:NavigationController = settingsStoryBoard.instantiateViewControllerWithIdentifier("SettingsStoryboard") as! NavigationController
+            let squareStoryBoard = UIStoryboard(name: "Square", bundle: nil)
+            let main:SquareController = squareStoryBoard.instantiateViewControllerWithIdentifier("SquareStoryBoard") as! SquareController
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             appDelegate.window?.rootViewController = main
         })
