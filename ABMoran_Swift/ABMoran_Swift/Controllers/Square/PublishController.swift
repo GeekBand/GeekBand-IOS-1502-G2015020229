@@ -105,17 +105,8 @@ class PublishController : UIViewController,UIImagePickerControllerDelegate,UINav
         let task:NSURLSessionDataTask = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
             self.clearAllNotice()
             if error == nil{
-                //let json : AnyObject! = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
-                // let message: String = json.objectForKey("data") as! String
-                //                if message == "Update success"{
-                Navigator.GotoMainView()
                 self.noticeSuccess("上传成功!")
-                //                }
-                //                else{
-                //                    dispatch_async(dispatch_get_main_queue(),{
-                //                        self.noticeError("上传失败!")
-                //                    })
-                //                }
+                Navigator.GotoMainView()
             }
         }
         task.resume()
@@ -165,6 +156,5 @@ class PublishController : UIViewController,UIImagePickerControllerDelegate,UINav
     //        }];
     //        [manager stopUpdatingLocation];
     //    }
-    
-    
+
 }
