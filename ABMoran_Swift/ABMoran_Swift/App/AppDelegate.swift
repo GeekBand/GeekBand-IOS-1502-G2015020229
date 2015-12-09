@@ -19,12 +19,12 @@ class AppDelegate: UIResponder,UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         let user = NSUserDefaults.standardUserDefaults()
-        if (user.objectForKey("token") != nil){
-            Navigator.GotoMainView()
-             // Navigator.GotoPublish(UIImage())
-        }else{
+//        if (user.objectForKey("token") != nil){
+//            Navigator.GotoMainView()
+//             // Navigator.GotoPublish(UIImage())
+//        }else{
             Navigator.GotoLogin()
-        }
+//        }
         
         // Override point for customization after application launch.
         return true

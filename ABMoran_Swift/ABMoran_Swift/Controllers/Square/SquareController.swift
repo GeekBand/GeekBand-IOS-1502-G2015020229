@@ -56,7 +56,6 @@ class SquareController: UITableViewController {
 
     func titleButtonClicked(button:UIButton){
         var menus = [AnyObject!]()
-
         for (key,_) in menuData {
             let item = KxMenuItem()
             item.action = Selector("requestLocationData:")
@@ -112,7 +111,6 @@ class SquareController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-
         let cell = tableView.dequeueReusableCellWithIdentifier("tablecell", forIndexPath: indexPath) as! SquareTableCell
         cell.addreslab.text = self.dataSource[indexPath.row].addr
         cell.dataSource = self.dataSource[indexPath.row].pics

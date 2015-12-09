@@ -8,7 +8,7 @@
         <!--Detail Controller-->
         <scene sceneID="hM9-ph-XA0">
             <objects>
-                <viewController storyboardIdentifier="ViewDetail" id="M84-62-oME" customClass="DetailController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M84-62-oME" customClass="DetailController" customModule="ABMoran_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HP1-AG-sOp"/>
                         <viewControllerLayoutGuide type="bottom" id="WQL-4S-1A8"/>

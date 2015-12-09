@@ -28,4 +28,9 @@ class SquareTableCell: UITableViewCell,UICollectionViewDelegate,UICollectionView
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         return dataSource.count
     }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let pic = self.dataSource[indexPath.row]
+        Navigator.GotoDetail(pic)
+    }
 }

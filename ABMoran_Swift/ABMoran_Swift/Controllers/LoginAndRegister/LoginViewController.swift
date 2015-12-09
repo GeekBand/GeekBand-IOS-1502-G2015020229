@@ -45,7 +45,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
                     self.user.setObject(data.objectForKey("token"), forKey: "token")
                     self.user.setObject(self.emailTextField.text, forKey: "user_Email")
                     self.user.setObject("G2015020229", forKey: "gbid")
-                    Navigator.GotoSquare()
+                    Navigator.GotoMainView()
                 case "No such user":
                     self.noticeError("账户不存在!")
                 case "Wrong password":
