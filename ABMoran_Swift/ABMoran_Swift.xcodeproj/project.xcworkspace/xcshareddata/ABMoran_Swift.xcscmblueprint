@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A48CEEE5017B7F29702CA6B87F25F9C58395EAEA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "67620B5EFA902936DF04070AF595B76AB0333747" : 0,
+    "A48CEEE5017B7F29702CA6B87F25F9C58395EAEA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "62337D14-0D68-4A9E-84A7-6B906F361692",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "67620B5EFA902936DF04070AF595B76AB0333747" : "GeekBand-IOS-1502-G2015020229\/ABMoran_Swift\/ABMoran_Swift\/Libraries\/Alamofire\/",
+    "A48CEEE5017B7F29702CA6B87F25F9C58395EAEA" : "GeekBand-IOS-1502-G2015020229\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ABMoran_Swift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ABMoran_Swift\/ABMoran_Swift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GeekBand\/GeekBand-IOS-1502-G2015020229.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A48CEEE5017B7F29702CA6B87F25F9C58395EAEA"
+    }
+  ]
+}
