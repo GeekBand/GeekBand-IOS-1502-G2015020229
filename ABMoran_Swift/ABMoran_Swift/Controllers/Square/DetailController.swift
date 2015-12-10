@@ -97,4 +97,21 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
         cell.loadData()
         return cell
     }
+
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            var comment =  self.dataSource[indexPath.row]
+            self.dataSource.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+            // call service
+            let parameters = [
+                    "user_id":user.stringForKey("user_id")!,
+                    "token":user.stringForKey("token")!,
+                    "comment_id":comment.id!
+            ]
+            Alamofire.request(.POST, "http://moran.chinacloudapp.cn/moran/web/comment/delete", parameters: parameters).response { (request, urlresquest, data, error) -> Void in
+                print("delete comment \(comment.id)")
+            }
+        }
+    }
 }
