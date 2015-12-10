@@ -43,19 +43,31 @@ class Navigator {
             let settingsStoryBoard = UIStoryboard(name: "Publish", bundle: nil)
             let main: PublishController = settingsStoryBoard.instantiateViewControllerWithIdentifier("PublishStoryboard") as! PublishController
             main.img = image;
+            let nav = UINavigationController(rootViewController: main)
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            appDelegate.window?.rootViewController = main
+            appDelegate.window?.rootViewController = nav
         })
     }
 
     class func GotoDetail(picture: Picture) {
         dispatch_async(dispatch_get_main_queue(), {
             let detail = UIStoryboard(name: "ViewDetail", bundle: nil)
-            let main:DetailController = detail.instantiateViewControllerWithIdentifier("ViewDetail") as! DetailController
+            let main: DetailController = detail.instantiateViewControllerWithIdentifier("ViewDetail") as! DetailController
             main.picture = picture
+            let nav = UINavigationController(rootViewController: main)
             print("navigate to picture detail")
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            appDelegate.window?.rootViewController = main
+            appDelegate.window?.rootViewController = nav
+        })
+    }
+
+    class func GotoComment(){
+        dispatch_async(dispatch_get_main_queue(), {
+            let comment = CommentController()
+            comment.pic_id = "1234"
+            let nav = UINavigationController(rootViewController: comment)
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.window?.rootViewController = nav
         })
     }
 
@@ -66,10 +78,10 @@ class Navigator {
             let squareStoryBoard = UIStoryboard(name: "Square", bundle: nil)
             let squareVC: SquareController = squareStoryBoard.instantiateViewControllerWithIdentifier("SquareStoryBoard") as! SquareController
             let square = UINavigationController(rootViewController: squareVC)
-            square.navigationBar.barTintColor = UIColor(red: 230 / 225.0, green: 160 / 225.0, blue: 58 / 225.0, alpha: 1)
+            square.navigationBar.backgroundColor = UIColor(red: 230 / 255.0, green: 106 / 255.0, blue: 58 / 255.0, alpha: 1)
+            square.navigationBar.barTintColor = UIColor(red: 230 / 255.0, green: 106 / 255.0, blue: 58 / 255.0, alpha: 1)
             square.tabBarItem.title = "广场"
             square.tabBarItem.image = UIImage(named: "square")
-
 
             let settingsStoryBoard = UIStoryboard(name: "Settings", bundle: nil)
             let settings: NavigationController = settingsStoryBoard.instantiateViewControllerWithIdentifier("SettingsStoryboard") as! NavigationController

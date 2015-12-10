@@ -67,12 +67,12 @@ class PublishController : UIViewController,UIImagePickerControllerDelegate,UINav
     
     func makePublishButton(){
         let publishButton = UIBarButtonItem(title: "发布", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("publishButtonClicked"))
-        self.navigationItem.rightBarButtonItem = publishButton;
+        self.navigationItem.rightBarButtonItem = publishButton
     }
     
     func makeBackButton(){
         let backButton = UIBarButtonItem(title: "返回", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("backButtonClicked"))
-        self.navigationItem.leftBarButtonItem = backButton;
+        self.navigationItem.leftBarButtonItem = backButton
     }
     
     func backButtonClicked(){
