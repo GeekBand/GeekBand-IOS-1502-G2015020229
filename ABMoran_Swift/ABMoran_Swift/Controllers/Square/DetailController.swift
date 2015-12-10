@@ -76,7 +76,7 @@ class DetailController: UIViewController, UITableViewDataSource, UITableViewDele
     }
 
     func commentButtonClicked(){
-        Navigator.GotoComment()
+        Navigator.GotoComment(picture)
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

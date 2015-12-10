@@ -61,10 +61,10 @@ class Navigator {
         })
     }
 
-    class func GotoComment(){
+    class func GotoComment(picture: Picture){
         dispatch_async(dispatch_get_main_queue(), {
             let comment = CommentController()
-            comment.pic_id = "1234"
+            comment.picture = picture
             let nav = UINavigationController(rootViewController: comment)
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             appDelegate.window?.rootViewController = nav

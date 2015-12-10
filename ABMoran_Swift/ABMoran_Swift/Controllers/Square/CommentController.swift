@@ -7,8 +7,9 @@ import Foundation
 import Alamofire
 
 class CommentController: UIViewController, UITextFieldDelegate {
-    var pic_id: String!
+    var picture: Picture!
     var comment: UITextField!
+    let user = NSUserDefaults.standardUserDefaults();
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +33,23 @@ class CommentController: UIViewController, UITextFieldDelegate {
 
     func commentButtonClicked() {
         // save comment
-        
+        let parameters = [
+                "user_id":user.stringForKey("user_id")!,
+                "pic_id":picture.pic_id!,
+                "token":user.stringForKey("token")!,
+                "comment":comment.text!
+        ]
+        self.pleaseWait()
+        Alamofire.request(.POST, "http://moran.chinacloudapp.cn/moran/web/comment/create", parameters: parameters).response { (request, urlresquest, data, error) -> Void in
+            self.clearAllNotice()
+            if error == nil{
+                self.noticeSuccess("发表成功!")
+                self.backButtonClicked()
+            }
+        }
     }
 
     func backButtonClicked() {
-        Navigator.GotoMainView()
+        Navigator.GotoDetail(picture)
     }
 }
